@@ -1,0 +1,142 @@
+{
+  "timestamp_utc": "2026-08-12T02:55:24.423084+00:00",
+  "judge_model": "gpt-5.5",
+  "blinding": "The judge saw candidate_1 through candidate_5 only. Skill mappings were retained by the runner and exposed only in this result file.",
+  "note": "The original Claude structured-output attempt returned invalid JSON from the proxy, so this rerun uses gpt-5.5 with strict JSON-schema output and high reasoning.",
+  "records": [
+    {
+      "candidate_id": "candidate_1",
+      "skill_id_mapping_revealed_after_judgment": "humanizer",
+      "judgment": {
+        "narrative_viewpoint_and_time": 5,
+        "restrained_affection": 5,
+        "concrete_imagery": 5,
+        "sentence_rhythm": 5,
+        "chinese_naturalness": 5,
+        "detail_fidelity": 5,
+        "overall_style_preservation": 5,
+        "drift_tags": [],
+        "strongest_preserved_feature": "克制的第一人称回忆与以动作、物件承载亲情的方式保留得最完整。",
+        "most_material_style_or_detail_loss": "几乎没有实质损失；仅开篇“像薄薄铺了一层油”改为“薄薄一层亮光”，意象质感略弱。",
+        "evidence": [
+          "保留“那年深秋，我从省城回家”“傍晚六点半”“县城西边的小站”等开篇时空，并保留雨后水泥地和灯光。",
+          "父亲的“洗得发白的蓝布棉袄”“黑伞”以及只问“饿不饿”的见面方式完整保留。",
+          "家中“萝卜烧豆腐”、辞职未明说、父亲说“慢慢找，先把身子顾好”等关键情节和含蓄关系均在。",
+          "清早送行时“牛皮纸包”“塞进袋侧的小口袋”“低头把袋口的拉链拉好”保留了原文动作细节。",
+          "结尾保留父亲站在湿地上、伞尖点地、棉袄下摆被风吹得贴在腿上，以及纸包里“两个还温着的烧饼”。"
+        ]
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 2089,
+      "completion_tokens": 463,
+      "total_tokens": 2552
+    },
+    {
+      "candidate_id": "candidate_2",
+      "skill_id_mapping_revealed_after_judgment": "stop-slop",
+      "judgment": {
+        "narrative_viewpoint_and_time": 5,
+        "restrained_affection": 5,
+        "concrete_imagery": 5,
+        "sentence_rhythm": 5,
+        "chinese_naturalness": 5,
+        "detail_fidelity": 5,
+        "overall_style_preservation": 5,
+        "drift_tags": [],
+        "strongest_preserved_feature": "第一人称回忆中的克制亲情和具体物件基本完整保留，父亲的关切仍主要通过问话、盛饭、塞纸包、拉拉链、雨地站立等动作呈现。",
+        "most_material_style_or_detail_loss": "几乎没有实质损失；仅“我答得快，绕开工作的事”比原文“怕他接着问起工作”略直白一点。",
+        "evidence": [
+          "开篇仍保留“省城回家”“傍晚六点半”“县城西边的小站”“雨后湿地”“灯光像薄薄一层油”。",
+          "父亲“洗得发白的蓝布棉袄”“黑伞”和只问“饿不饿”的见面方式均在。",
+          "萝卜烧豆腐、辞职未明说、父亲说“慢慢找，先把身子顾好”完整保留。",
+          "清早送车、牛皮纸包塞进行李侧袋、低头拉好拉链等关键动作没有遗漏。",
+          "结尾保留父亲未撑伞、伞尖点湿地、棉袄下摆贴腿、慢慢走向售票窗，以及纸包里两个还温着的烧饼。"
+        ]
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 2076,
+      "completion_tokens": 502,
+      "total_tokens": 2578
+    },
+    {
+      "candidate_id": "candidate_3",
+      "skill_id_mapping_revealed_after_judgment": "avoid-ai-writing",
+      "judgment": {
+        "narrative_viewpoint_and_time": 5,
+        "restrained_affection": 5,
+        "concrete_imagery": 5,
+        "sentence_rhythm": 5,
+        "chinese_naturalness": 5,
+        "detail_fidelity": 5,
+        "overall_style_preservation": 5,
+        "drift_tags": [],
+        "strongest_preserved_feature": "克制的第一人称回忆与以动作、物件承载亲情的方式保持得最完整。",
+        "most_material_style_or_detail_loss": "几乎没有实质性风格或细节损失，仅有“回头”改为“回望”、“收起来”改为“合上”等轻微措辞变化。",
+        "evidence": [
+          "开篇仍保留“傍晚六点半”“县城西边的小站”“下午的雨”“一层薄油似的亮”，完整承接雨后灯光场景。",
+          "父亲的“洗得发白的蓝布棉袄”“黑伞”以及只问“饿不饿？”均保留，亲情表达克制。",
+          "辞职未明说、父亲不追问，并以“慢慢找，先把身子顾好”回应，叙事功能未变。",
+          "牛皮纸包、袋侧小口袋、推让、低头拉好拉链等送行动作完整保留。",
+          "末段保留伞尖点湿地、棉袄下摆被风吹贴在腿上、慢慢走向售票窗，以及结尾两个温热烧饼。"
+        ]
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 2083,
+      "completion_tokens": 389,
+      "total_tokens": 2472
+    },
+    {
+      "candidate_id": "candidate_4",
+      "skill_id_mapping_revealed_after_judgment": "plain-writing",
+      "judgment": {
+        "narrative_viewpoint_and_time": 5,
+        "restrained_affection": 5,
+        "concrete_imagery": 4,
+        "sentence_rhythm": 5,
+        "chinese_naturalness": 5,
+        "detail_fidelity": 5,
+        "overall_style_preservation": 5,
+        "drift_tags": [],
+        "strongest_preserved_feature": "第一人称回忆时序和克制的父子互动基本完整保留，情感仍通过问话、盛饭、塞纸包、拉拉链和站在雨地等动作呈现。",
+        "most_material_style_or_detail_loss": "开篇雨后地面“像薄薄铺了一层油”的比喻被改成“反着光”，具体质感和原文的细微陌生感略有削弱。",
+        "evidence": [
+          "保留了“傍晚六点半到县城西边的小站”、雨后水泥地、售票窗、蓝布棉袄和黑伞等开篇核心场景。",
+          "父亲见面仍只问“饿不饿？”，晚饭处仍有萝卜烧豆腐、辞职未明说和“慢慢找，先把身子顾好”。",
+          "清早送车、牛皮纸包塞进行李侧袋、低头拉好拉链、车开后父亲留在原地、伞尖点湿地、结尾两个温热烧饼均保留。",
+          "“灯光照在湿地上，反着光”较原文“像薄薄铺了一层油”更平直，意象略弱。"
+        ]
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 2088,
+      "completion_tokens": 614,
+      "total_tokens": 2702
+    },
+    {
+      "candidate_id": "candidate_5",
+      "skill_id_mapping_revealed_after_judgment": "humanize",
+      "judgment": {
+        "narrative_viewpoint_and_time": 5,
+        "restrained_affection": 5,
+        "concrete_imagery": 5,
+        "sentence_rhythm": 5,
+        "chinese_naturalness": 4,
+        "detail_fidelity": 5,
+        "overall_style_preservation": 5,
+        "drift_tags": [],
+        "strongest_preserved_feature": "第一人称回忆线索和克制的父子情感基本完整保留，主要仍通过父亲的动作、物件和简短对话显现。",
+        "most_material_style_or_detail_loss": "没有明显材料性缺失；较小的问题是“饭又被他回了两遍”用词不自然，以及“伞尖一点一点磕在湿地上”比原文“伞尖点在湿地上”多了一点动作感。",
+        "evidence": [
+          "开篇仍保留“省城”“傍晚六点半”“县城西边的小站”“雨后水泥地”“灯光”“薄油”等场景。",
+          "父亲的“洗得发白的蓝布棉袄”“黑伞”和只问“饿不饿”的见面方式都在，情感表达克制。",
+          "“萝卜烧豆腐”、辞职未明说、“慢慢找，先把身子顾好”均保留。",
+          "清早送行、牛皮纸包、塞进行李侧袋、拉好拉链、车后回望、两个温热烧饼等关键细节完整。",
+          "个别措辞如“饭又被他回了两遍”不够自然，略影响中文自然度。"
+        ]
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 2098,
+      "completion_tokens": 878,
+      "total_tokens": 2976
+    }
+  ]
+}

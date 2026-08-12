@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-12T02:51:19.726251+00:00",
+  "generation_model": "gpt-5",
+  "style_test_type": "original Chinese restrained-family-prose preservation",
+  "skill_count": 5,
+  "benchmark_constraints": {
+    "same_input": true,
+    "same_model": true,
+    "same_max_completion_tokens": 1800,
+    "first_person_retrospective": true,
+    "six_material_details_preserved": true,
+    "restrained_affection": true,
+    "no_new_events_or_interpretations": true,
+    "no_detection_evasion_claims": true
+  },
+  "records": [
+    {
+      "skill_id": "humanizer",
+      "upstream": "https://github.com/blader/humanizer",
+      "skill_file": "skills/humanizer.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/humanizer.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 7411,
+      "completion_tokens": 1959,
+      "total_tokens": 9370
+    },
+    {
+      "skill_id": "stop-slop",
+      "upstream": "https://github.com/hardikpandya/stop-slop",
+      "skill_file": "skills/stop-slop.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/stop-slop.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 1543,
+      "completion_tokens": 3036,
+      "total_tokens": 4579
+    },
+    {
+      "skill_id": "avoid-ai-writing",
+      "upstream": "https://github.com/conorbronsdon/avoid-ai-writing",
+      "skill_file": "skills/avoid-ai-writing.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/avoid-ai-writing.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 21672,
+      "completion_tokens": 2273,
+      "total_tokens": 23945
+    },
+    {
+      "skill_id": "plain-writing",
+      "upstream": "https://github.com/docwriter-org/plain-writing-skill",
+      "skill_file": "skills/plain-writing.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/plain-writing.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 3949,
+      "completion_tokens": 2726,
+      "total_tokens": 6675
+    },
+    {
+      "skill_id": "humanize",
+      "upstream": "https://github.com/harshaneel/humanize",
+      "skill_file": "skills/humanize.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/humanize.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 9554,
+      "completion_tokens": 2544,
+      "total_tokens": 12098
+    }
+  ]
+}

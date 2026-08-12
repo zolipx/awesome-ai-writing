@@ -1,0 +1,8 @@
+# Downloaded third-party rule snapshots; retrieve with fetch_upstream_skills.sh.
+skills/
+
+# Live catalog retrieval is not a benchmark artifact.
+model_catalog.json
+
+# Local Python syntax-check output.
+__pycache__/

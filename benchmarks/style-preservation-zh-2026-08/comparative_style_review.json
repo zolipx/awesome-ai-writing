@@ -1,0 +1,85 @@
+{
+  "timestamp_utc": "2026-08-12T02:57:09.449135+00:00",
+  "review_model": "gpt-5.5",
+  "blinding": "The reviewer saw candidate_1 through candidate_5 only; mapping is revealed below after the review.",
+  "candidate_mapping_revealed_after_review": {
+    "candidate_1": "humanizer",
+    "candidate_2": "stop-slop",
+    "candidate_3": "avoid-ai-writing",
+    "candidate_4": "plain-writing",
+    "candidate_5": "humanize"
+  },
+  "review": {
+    "ranked_results": [
+      {
+        "candidate_id": "candidate_1",
+        "rank": 1,
+        "style_preservation_score": 88,
+        "style_strength": "整体叙述顺序、父亲动作的克制感和多数物件意象保存较好，像“手里攥着一把黑伞”“伞尖点在湿地上”“两个还温着的烧饼”等关键收束都贴近原文，语气也基本保持平静。",
+        "specific_drift_or_loss": "主要损失在开头雨地意象，把原文“像薄薄铺了一层油”的具象比喻改成了较平直的“薄薄一层亮光”，削弱了湿冷、油亮的触感；“怕他顺势问起工作”里的“顺势”稍带解释性；“筷子在碗边搁着”也把父亲放筷子的动作改成了静态描述。",
+        "quoted_evidence": [
+          "“薄薄一层亮光”",
+          "“怕他顺势问起工作”",
+          "“筷子在碗边搁着”"
+        ]
+      },
+      {
+        "candidate_id": "candidate_3",
+        "rank": 2,
+        "style_preservation_score": 84,
+        "style_strength": "保留了原文的主要事件、父亲的沉默照拂和结尾烧饼的含蓄落点；“湿面泛着一层薄油似的亮”虽有加工，仍保存了油亮的具象比喻。",
+        "specific_drift_or_loss": "整体比原文更带修饰性和整理感，句法被切分得更明确，如开头拆成“那年深秋，我从省城回家。傍晚六点半”；“他给我盛饭，又问”削弱了原文“一面……一面……”的同时进行；“回望”“原处”等词略显书面化，降低了原文朴素的口吻。",
+        "quoted_evidence": [
+          "“湿面泛着一层薄油似的亮”",
+          "“他给我盛饭，又问”",
+          "“我从窗里回望”"
+        ]
+      },
+      {
+        "candidate_id": "candidate_4",
+        "rank": 3,
+        "style_preservation_score": 81,
+        "style_strength": "不少句子几乎沿用原文，尤其第二段关于辞职未提、父亲劝慰的部分，仍能保持克制的家庭场景和低声叙述。",
+        "specific_drift_or_loss": "开头把“像薄薄铺了一层油”改为“反着光”，使核心视觉意象变成说明句；“我看见父亲”改变了原文直接呈现父亲位置的方式；“他迎上来”新增动作，破坏了父亲原本只是站着、只问一句的含蓄；“筷子在他手边停了一会儿”搭配也不自然。",
+        "quoted_evidence": [
+          "“反着光”",
+          "“我看见父亲站在售票窗旁”",
+          "“他迎上来”",
+          "“筷子在他手边停了一会儿”"
+        ]
+      },
+      {
+        "candidate_id": "candidate_2",
+        "rank": 4,
+        "style_preservation_score": 77,
+        "style_strength": "保留了多数材料点，油亮湿地、蓝布棉袄、黑伞、牛皮纸包和温烧饼等物象仍在，结尾动作线也大体未改。",
+        "specific_drift_or_loss": "多处把原文含蓄心理改成解释或口语化处理。“我答得快，绕开工作的事”直接说明了回避，弱于原文“怕他接着问起工作”的隐忍；“夜里风从门缝里往进挤”带现代口语和方言感；“塞进行李侧的小口袋里”搭配生硬；开头“傍晚六点半到县城西边的小站”也把车到站的叙述压缩得不够自然。",
+        "quoted_evidence": [
+          "“绕开工作的事”",
+          "“风从门缝里往进挤”",
+          "“塞进行李侧的小口袋里”",
+          "“傍晚六点半到县城西边的小站”"
+        ]
+      },
+      {
+        "candidate_id": "candidate_5",
+        "rank": 5,
+        "style_preservation_score": 66,
+        "style_strength": "基本事件仍完整，父亲接站、热饭、塞纸包、车走后拆出烧饼的叙事骨架没有丢失。",
+        "specific_drift_or_loss": "改写痕迹最重，节奏被明显分段和现代化。“从省城往回走”“灯光压下来”改变了原文朴素叙述和物象关系；英文引号及“只问一句”带口语说明感；“尽量短”把原文的担心解释成策略；“伞尖一点一点磕在湿地上”把原文静止的“点在湿地上”改成连续动作，改变了父亲站立等待的画面。",
+        "quoted_evidence": [
+          "“从省城往回走”",
+          "“灯光压下来”",
+          "“尽量短”",
+          "“伞尖一点一点磕在湿地上”"
+        ]
+      }
+    ],
+    "overall_observation": "五个候选都保留了六个主要材料点，但风格保持的差别在于是否维持原文的朴素句法、具象比喻和含蓄动作。candidate_1整体最稳，只在关键油亮比喻上有明显损失；candidate_5则因解释化、现代口语化和动作改写最多，风格偏离最大。"
+  },
+  "usage": {
+    "prompt_tokens": 3206,
+    "completion_tokens": 2946,
+    "total_tokens": 6152
+  }
+}
