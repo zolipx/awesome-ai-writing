@@ -1,0 +1,70 @@
+{
+  "timestamp_utc": "2026-08-12T02:33:09.667129+00:00",
+  "generation_model": "gpt-5",
+  "skill_count": 5,
+  "benchmark_constraints": {
+    "same_input": true,
+    "same_model": true,
+    "same_max_completion_tokens": 1400,
+    "preserve_facts": true,
+    "no_new_facts_or_examples": true,
+    "no_detection_evasion_claims": true
+  },
+  "records": [
+    {
+      "skill_id": "humanizer",
+      "upstream": "https://github.com/blader/humanizer",
+      "skill_file": "skills/humanizer.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/humanizer.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 7091,
+      "completion_tokens": 1113,
+      "total_tokens": 8204
+    },
+    {
+      "skill_id": "stop-slop",
+      "upstream": "https://github.com/hardikpandya/stop-slop",
+      "skill_file": "skills/stop-slop.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/stop-slop.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 1223,
+      "completion_tokens": 1626,
+      "total_tokens": 2849
+    },
+    {
+      "skill_id": "avoid-ai-writing",
+      "upstream": "https://github.com/conorbronsdon/avoid-ai-writing",
+      "skill_file": "skills/avoid-ai-writing.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/avoid-ai-writing.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 21352,
+      "completion_tokens": 852,
+      "total_tokens": 22204
+    },
+    {
+      "skill_id": "plain-writing",
+      "upstream": "https://github.com/docwriter-org/plain-writing-skill",
+      "skill_file": "skills/plain-writing.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/plain-writing.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 3629,
+      "completion_tokens": 1589,
+      "total_tokens": 5218
+    },
+    {
+      "skill_id": "humanize",
+      "upstream": "https://github.com/harshaneel/humanize",
+      "skill_file": "skills/humanize.SKILL.md",
+      "generation_model": "gpt-5",
+      "output_file": "outputs/humanize.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 9234,
+      "completion_tokens": 5581,
+      "total_tokens": 14815
+    }
+  ]
+}

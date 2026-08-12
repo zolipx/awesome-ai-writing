@@ -1,0 +1,11 @@
+{
+  "dataset": "Hello-SimpleAI/HC3",
+  "config": "all",
+  "split": "train",
+  "row_idx": 12,
+  "source": "reddit_eli5",
+  "question": "Why do movie companies build sets rather than film on scene ? Seems like any location will do and seems like it 's cheaper to find an existing location rather than building their own . But I 'm open to being wrong . Please explain like I'm five.",
+  "source_field": "chatgpt_answers[0]",
+  "char_count": 1664,
+  "word_count_space_delimited": 284
+}

@@ -1,0 +1,352 @@
+{
+  "source_word_count": 280,
+  "output_metrics": [
+    {
+      "skill_id": "humanizer",
+      "characters": 982,
+      "word_count": 176,
+      "word_reduction_vs_source_percent": 37.1,
+      "sentence_count": 11,
+      "bullet_line_count": 4,
+      "traceability_flags": {
+        "visual_control": true,
+        "fiction_or_mood_context": true,
+        "long_rental_cost": true,
+        "location_use_or_alteration_cost": true,
+        "logistics": true,
+        "safety": true,
+        "long_term_cost_caveat": true
+      },
+      "traceability_flag_count": 7
+    },
+    {
+      "skill_id": "stop-slop",
+      "characters": 945,
+      "word_count": 169,
+      "word_reduction_vs_source_percent": 39.6,
+      "sentence_count": 11,
+      "bullet_line_count": 4,
+      "traceability_flags": {
+        "visual_control": true,
+        "fiction_or_mood_context": true,
+        "long_rental_cost": true,
+        "location_use_or_alteration_cost": true,
+        "logistics": true,
+        "safety": true,
+        "long_term_cost_caveat": true
+      },
+      "traceability_flag_count": 7
+    },
+    {
+      "skill_id": "avoid-ai-writing",
+      "characters": 940,
+      "word_count": 167,
+      "word_reduction_vs_source_percent": 40.4,
+      "sentence_count": 11,
+      "bullet_line_count": 4,
+      "traceability_flags": {
+        "visual_control": true,
+        "fiction_or_mood_context": true,
+        "long_rental_cost": true,
+        "location_use_or_alteration_cost": true,
+        "logistics": true,
+        "safety": true,
+        "long_term_cost_caveat": true
+      },
+      "traceability_flag_count": 7
+    },
+    {
+      "skill_id": "plain-writing",
+      "characters": 1107,
+      "word_count": 195,
+      "word_reduction_vs_source_percent": 30.4,
+      "sentence_count": 17,
+      "bullet_line_count": 4,
+      "traceability_flags": {
+        "visual_control": true,
+        "fiction_or_mood_context": true,
+        "long_rental_cost": true,
+        "location_use_or_alteration_cost": true,
+        "logistics": true,
+        "safety": true,
+        "long_term_cost_caveat": true
+      },
+      "traceability_flag_count": 7
+    },
+    {
+      "skill_id": "humanize",
+      "characters": 913,
+      "word_count": 166,
+      "word_reduction_vs_source_percent": 40.7,
+      "sentence_count": 12,
+      "bullet_line_count": 0,
+      "traceability_flags": {
+        "visual_control": true,
+        "fiction_or_mood_context": true,
+        "long_rental_cost": true,
+        "location_use_or_alteration_cost": true,
+        "logistics": true,
+        "safety": true,
+        "long_term_cost_caveat": true
+      },
+      "traceability_flag_count": 7
+    }
+  ],
+  "traceability_rules": {
+    "visual_control": "\\b(look|looks|feel|feels|mood|atmosphere)\\b",
+    "fiction_or_mood_context": "\\b(made-up|fictional|fantastical|specific mood|specific feeling)\\b",
+    "long_rental_cost": "\\b(rent|renting|rented).{0,100}\\b(long|extended)\\b|\\b(long|extended).{0,100}\\b(rent|renting|rented)\\b",
+    "location_use_or_alteration_cost": "\\bpay\\b.{0,120}\\b(use|change|alter|fit)\\b",
+    "logistics": "\\b(crowds?|noise|distractions?|electricity|water|equipment|gear)\\b",
+    "safety": "\\b(traffic|ground|terrain|weather)\\b",
+    "long_term_cost_caveat": "\\b(upfront|at the start|at first)\\b.{0,300}\\b(delay|surprise|unexpected|long run|long-run|over time)\\b|\\b(delay|surprise|unexpected|long run|long-run|over time)\\b.{0,300}\\b(upfront|at the start|at first)\\b"
+  },
+  "fact_audit_evidence_qa": [
+    {
+      "skill_id": "humanizer",
+      "direct_evidence_checks": [
+        {
+          "criterion_index": 1,
+          "status": "present",
+          "evidence": "\"full control over how everything looks and feels\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 2,
+          "status": "present",
+          "evidence": "\"That matters if the story is in a made-up world or they need a very specific mood.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 3,
+          "status": "present",
+          "evidence": "\"Renting a place can be costly, especially for a long time.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 4,
+          "status": "present",
+          "evidence": "\"They might have to pay to use it, and pay again to change it to fit the story.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 5,
+          "status": "present",
+          "evidence": "\"There can be crowds, noise, and other distractions\" / \"like electricity, water, or special equipment\"",
+          "evidence_is_direct_substring": false
+        },
+        {
+          "criterion_index": 6,
+          "status": "present",
+          "evidence": "\"hazards like traffic, unstable ground, or bad weather\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 7,
+          "status": "present",
+          "evidence": "\"Building sets can cost more at the start, but it can be cheaper in the long run because the filmmakers have more control and are less likely to face delays or surprise costs.\"",
+          "evidence_is_direct_substring": true
+        }
+      ],
+      "direct_evidence_pass_count": 6,
+      "total_items": 7
+    },
+    {
+      "skill_id": "stop-slop",
+      "direct_evidence_checks": [
+        {
+          "criterion_index": 1,
+          "status": "present",
+          "evidence": "\"they decide how everything looks and feels\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 2,
+          "status": "present",
+          "evidence": "\"This matters when the story lives in a make‑believe or fictional world, or when they want a specific mood or atmosphere.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 3,
+          "status": "present",
+          "evidence": "\"Renting a place can cost a lot, and costs grow if they need it for a long time.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 4,
+          "status": "present",
+          "evidence": "\"They might have to pay just to use the spot, and also pay to change it to fit the story.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 5,
+          "status": "present",
+          "evidence": "\"Real places bring crowds, noise, and other distractions. The team might not get what they need there, like electricity, water, or special equipment.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 6,
+          "status": "present",
+          "evidence": "\"Real places can bring traffic, shaky ground, or bad weather.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 7,
+          "status": "present",
+          "evidence": "\"Sets can cost more at the start, but over time they can save money because the team controls the space, avoids delays, and cuts the risk of surprise costs.\"",
+          "evidence_is_direct_substring": true
+        }
+      ],
+      "direct_evidence_pass_count": 7,
+      "total_items": 7
+    },
+    {
+      "skill_id": "avoid-ai-writing",
+      "direct_evidence_checks": [
+        {
+          "criterion_index": 1,
+          "status": "present",
+          "evidence": "\"they can make everything look exactly how they want\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 2,
+          "status": "present",
+          "evidence": "\"That helps for made-up worlds or when they need a very specific mood or feel.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 3,
+          "status": "present",
+          "evidence": "\"Renting a place can cost a lot, especially for a long time.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 4,
+          "status": "present",
+          "evidence": "\"They might have to pay just to use it, and also pay to change it so it fits the scene.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 5,
+          "status": "present",
+          "evidence": "\"There can be crowds, noise, and other distractions. They also might not have what the crew needs there, like enough electricity, water, or special equipment.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 6,
+          "status": "present",
+          "evidence": "\"Real locations can be risky, with things like traffic, uneven ground, or bad weather.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 7,
+          "status": "present",
+          "evidence": "\"sets can cost more at the start, but they can be cheaper in the long run because the crew has more control, which helps avoid delays and surprise costs.\"",
+          "evidence_is_direct_substring": true
+        }
+      ],
+      "direct_evidence_pass_count": 7,
+      "total_items": 7
+    },
+    {
+      "skill_id": "plain-writing",
+      "direct_evidence_checks": [
+        {
+          "criterion_index": 1,
+          "status": "present",
+          "evidence": "\"A set gives complete control over how the place looks and feels.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 2,
+          "status": "present",
+          "evidence": "\"This matters when the story is in a fantastical or fictional world, or when they want a specific mood or atmosphere.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 3,
+          "status": "present",
+          "evidence": "\"Renting a place can be expensive, especially for a long time.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 4,
+          "status": "present",
+          "evidence": "\"They may have to pay to use certain places, and they may have to pay to change the place to fit the story.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 5,
+          "status": "present",
+          "evidence": "\"There can be crowds, noise, and other distractions\"; \"like electricity, water, or special equipment.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 6,
+          "status": "present",
+          "evidence": "\"Real places can have traffic, unstable ground, or bad weather.\"",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 7,
+          "status": "present",
+          "evidence": "\"Building sets can cost more at first, but they can be more cost-effective over time, because they give more control and reduce the risk of delays or unexpected costs.\"",
+          "evidence_is_direct_substring": true
+        }
+      ],
+      "direct_evidence_pass_count": 7,
+      "total_items": 7
+    },
+    {
+      "skill_id": "humanize",
+      "direct_evidence_checks": [
+        {
+          "criterion_index": 1,
+          "status": "present",
+          "evidence": "control every little thing: the look, the sounds, the mood",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 2,
+          "status": "present",
+          "evidence": "If the story lives in a made-up world or needs a very specific feeling",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 3,
+          "status": "present",
+          "evidence": "Renting a place can get pricey, especially if the crew needs it for a long time",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 4,
+          "status": "present",
+          "evidence": "they may also have to pay to use certain spots and to change them so the scene works",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 5,
+          "status": "present",
+          "evidence": "There can be crowds, noise, and distractions that ruin takes. The crew might also miss basics they need there, like steady power, water, or special gear.",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 6,
+          "status": "present",
+          "evidence": "Streets, shaky ground, and bad weather can hurt people or stop work.",
+          "evidence_is_direct_substring": true
+        },
+        {
+          "criterion_index": 7,
+          "status": "present",
+          "evidence": "Building sets can cost more upfront. Over time it can still save money, because the crew controls the space and avoids delays or big surprise bills later.",
+          "evidence_is_direct_substring": true
+        }
+      ],
+      "direct_evidence_pass_count": 7,
+      "total_items": 7
+    }
+  ],
+  "interpretation": "Traceability flags are lexical evidence checks, not semantic scores. A false flag does not prove a missing idea; it triggers manual review. Direct-evidence QA checks whether a model auditor quoted text that actually exists in the candidate."
+}

@@ -1,0 +1,105 @@
+{
+  "timestamp_utc": "2026-08-12T02:34:14.995523+00:00",
+  "judge_model": "claude-opus-4-7",
+  "blinding": "The judge saw only candidate_1 through candidate_5. The mapping was retained by the runner and revealed only in this results file.",
+  "rubric": {
+    "factual_fidelity": "Meaning preserved and no unsupported additions.",
+    "coverage": "Retains the four reasons and the cost caveat in the source answer.",
+    "clarity": "Understandable organization and wording.",
+    "naturalness": "Avoids mechanical or templated prose without mistaking stylistic difference for quality.",
+    "reader_fit": "Suitable for a curious non-expert / ELI5 request.",
+    "concision": "Removes needless repetition without losing material content.",
+    "overall": "Holistic quality under the benchmark constraints."
+  },
+  "records": [
+    {
+      "candidate_id": "candidate_1",
+      "skill_id_mapping_revealed_after_judgment": "humanizer",
+      "judgment": {
+        "factual_fidelity": 5,
+        "coverage": 5,
+        "clarity": 5,
+        "naturalness": 5,
+        "reader_fit": 5,
+        "concision": 5,
+        "overall": 5,
+        "notes": "All four reasons preserved, cost caveat included, simple language suitable for a curious non-expert."
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 1151,
+      "completion_tokens": 96,
+      "total_tokens": 1247
+    },
+    {
+      "candidate_id": "candidate_2",
+      "skill_id_mapping_revealed_after_judgment": "stop-slop",
+      "judgment": {
+        "factual_fidelity": 5,
+        "coverage": 5,
+        "clarity": 4,
+        "naturalness": 4,
+        "reader_fit": 4,
+        "concision": 5,
+        "overall": 4,
+        "notes": "Accurately preserves all four reasons (control, cost, logistics, safety) and the upfront-cost caveat. Language is simplified appropriately for a non-expert, though slightly choppy in places ('shaky ground') and the bullet format is a bit list-like rather than warmly conversational for an ELI5 tone."
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 1153,
+      "completion_tokens": 168,
+      "total_tokens": 1321
+    },
+    {
+      "candidate_id": "candidate_3",
+      "skill_id_mapping_revealed_after_judgment": "avoid-ai-writing",
+      "judgment": {
+        "factual_fidelity": 5,
+        "coverage": 5,
+        "clarity": 5,
+        "reader_fit": 5,
+        "concision": 5,
+        "overall": 5,
+        "notes": "Preserves all four reasons (control, cost, logistics, safety) and the upfront-vs-long-run cost caveat. Language is simplified appropriately for a curious non-expert/child, with short sentences and clear bullets. No unsupported additions."
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 1146,
+      "completion_tokens": 138,
+      "total_tokens": 1284
+    },
+    {
+      "candidate_id": "candidate_4",
+      "skill_id_mapping_revealed_after_judgment": "plain-writing",
+      "judgment": {
+        "factual_fidelity": 5,
+        "coverage": 5,
+        "clarity": 4,
+        "naturalness": 4,
+        "reader_fit": 4,
+        "concision": 5,
+        "overall": 4,
+        "notes": "Faithfully preserves all four reasons and the cost caveat without adding unsupported claims. Prose is clear and concise, though somewhat mechanical/list-like and not especially tailored to a 'five-year-old' tone despite the ELI5 request."
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 1188,
+      "completion_tokens": 163,
+      "total_tokens": 1351
+    },
+    {
+      "candidate_id": "candidate_5",
+      "skill_id_mapping_revealed_after_judgment": "humanize",
+      "judgment": {
+        "factual_fidelity": 5,
+        "coverage": 5,
+        "clarity": 5,
+        "naturalness": 5,
+        "reader_fit": 5,
+        "concision": 5,
+        "overall": 5,
+        "notes": "Covers all four reasons (control, cost, logistics, safety) plus the upfront-cost caveat. Language is simple and friendly, fitting a curious non-expert. No unsupported additions; meaning preserved. Concise and well-paced."
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 1135,
+      "completion_tokens": 168,
+      "total_tokens": 1303
+    }
+  ]
+}

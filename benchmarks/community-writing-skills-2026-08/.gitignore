@@ -1,0 +1,7 @@
+# Downloaded third-party rule snapshots; retrieve with fetch_upstream_skills.sh.
+skills/
+
+# Retrieval/runtime artifacts that are represented by input.md and manifests.
+hc3_row_12.json
+model_catalog.json
+humanize_skill_paths.txt
