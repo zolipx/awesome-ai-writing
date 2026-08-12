@@ -59,6 +59,9 @@
 
 | 项目 | 简介 | 语言 |
 | --- | --- | --- |
+| [plain-writing-skill](https://github.com/shreyashankar/plain-writing-skill) | 面向 AI Agent 的简明写作技能，带有修改前后对比视图 | Python |
+| [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | 审计并重写内容以消除 AI 写作模式（AI-isms），支持就地编辑与检测 | JavaScript |
+| [anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing) | 针对 Claude Code 及通用 Agent 的反 AI 冗余/套话（Anti-Slop）写作技能 | Markdown |
 | [humanizer](https://github.com/blader/humanizer) | 去除 AI 生成文本痕迹的 Agent Skill | Python |
 | [stop-slop](https://github.com/hardikpandya/stop-slop) | 减少 AI 套话和写作习惯的 Skill | 未标注 |
 | [Humanizer-zh](https://github.com/op7418/Humanizer-zh) | Humanizer 中文版本 | 未标注 |
