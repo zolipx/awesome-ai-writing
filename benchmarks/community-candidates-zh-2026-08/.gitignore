@@ -1,0 +1,8 @@
+# Downloaded third-party rules are reproducible from upstream_commits.tsv.
+skills/
+
+# Live catalog snapshots are transient.
+model_catalog.json
+
+# Local Python syntax-check output.
+__pycache__/

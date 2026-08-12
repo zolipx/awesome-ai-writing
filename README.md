@@ -9,6 +9,7 @@
 ## 目录
 
 - [社区高采用度写作 Skills 与生态](#社区高采用度写作-skills-与生态)
+- [社区实用候选与中文复核](#社区实用候选与中文复核)
 - [中文写作精选（近期核验）](#中文写作精选近期核验)
 - [AI 小说与长篇叙事](#ai-小说与长篇叙事)
 - [AI 写作工作台与编辑器](#ai-写作工作台与编辑器)
@@ -36,6 +37,22 @@
 | [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Claude Skills 生态的高热度聚合目录。 | 社区维护的分类入口；适合扩展检索，但应逐个核验具体 Skill 的许可、维护和用途。 |
 
 > **使用建议：**先安装或阅读 `Humanizer` / `Stop Slop` 这样的通用上游规则，再按目标语言添加中文、繁体中文或特定体裁的本地化 Skill。翻译版、派生版与小众规则集不应在采用度上与上游社区核心项目等量齐观。
+
+## 社区实用候选与中文复核
+
+这一节补充**不以高 Star 为首要标准**的规则集。收录要求是：可读取的规则/工作流，加上至少两类可核验信号（如第三方社区讨论、二次复用、公开目录/安装、维护和许可），或在本仓库的同一原创中文散文测试中完成可复查运行。这里的“实用”表示值得亲自试验，**不是**对效果或检测结果的保证。完整标准、原始社区讨论链接、固定规则版本、输出与失败记录见[社区证据说明](research/community-signal-criteria-2026-08.md)、[调研记录](research/community-signal-findings-2026-08.md)与[中文复核报告](benchmarks/community-candidates-zh-2026-08/REPORT.md)。[11] [12]
+
+| 资源 | 不只看 Star 的理由 | 中文写作与测试观察 |
+| --- | --- | --- |
+| [UNSLOP](https://github.com/theclaymethod/unslop) | 仅约 50 Stars，但有两阶段诊断—重建、规则验证、冻结盲测与事实保真门槛可审阅。 | 在本仓库同一篇原创中文散文的盲态横评中排第 1（96/100）；仅作单样本参考。[11] [18] |
+| [no-ai-slop](https://github.com/petergyang/no-ai-slop) | 作为高传播对照，规则公开、MIT 且社区讨论活跃；可与小众候选比较而非盲目跟随。 | 在同一测试中排第 2（92/100）；小幅将父亲整理行李的动作说实。[12] [18] |
+| [humanizer-skill](https://github.com/Aboudjem/humanizer-skill) | 约 158 Stars，但有 53 模式、声音选择、多 Agent 适配、MIT 和近期维护。 | 在同一测试中排第 3（88/100）；总体保住材料与克制关系，仍有轻微修饰化。[13] [18] |
+| [WRITING.md](https://github.com/Anbeeld/WRITING.md) | 在 r/ClaudeCode 中被非作者推荐，相关作者表示会吸收其规则；有 Skill/compact/mini 版本、发布标签和 MIT。 | 在同一测试中排第 4（80/100）；更适合做团队编辑基线，中文散文中可能变得解释化。[14] [18] |
+| [Patina](https://github.com/devswha/patina) | 约 315 Stars，但有中文/韩文/英文/日文模式、文档类型和声音模块及持续工程维护。 | **中文优先观察项。**完整规则在本次统一请求中触发 502，未进入排名；先以小样逐段试用。[15] [18] |
+| [unslop-text](https://github.com/JCarterJohnson/vibecoded-design-tells/tree/main/unslop-ai-text) | 宿主仓库约 439 Stars；r/ClaudeAI 有公开讨论、扫描器、数据说明和 demo，但意见存在分歧。 | 更适合研究“哪些模式被用户标记”为 AI 痕迹；不应据此直接认定效果最佳。[16] [18] |
+| [EveryDay-Writer](https://github.com/Deupaxx/EveryDay-Writer) | 仅约 28 Stars，却有多声音 profile、资料隔离、13 个子 Skill、MIT 和活跃问题/PR。 | 适合积累自己的修订样本和声音资料库；尚未纳入本仓库统一中文测试。[17] [18] |
+
+> **社区实践的共同结论：**通用 Humanizer 适合发现显眼模板，但不能替代个人声音资料库。更可靠的用法是：保留少量审校器，拿自己的 before/after 修订积累出声音规则，并对每次较大改写逐段审阅。[18]
 
 ## 中文写作精选（近期核验）
 
@@ -168,6 +185,22 @@
 [9] [vercel-labs/skills — open Agent Skills CLI.](https://github.com/vercel-labs/skills)
 
 [10] [anthropics/skills — Agent Skills implementation and specification reference.](https://github.com/anthropics/skills)
+
+[11] [theclaymethod/unslop — GitHub repository.](https://github.com/theclaymethod/unslop)
+
+[12] [petergyang/no-ai-slop — GitHub repository.](https://github.com/petergyang/no-ai-slop)
+
+[13] [Aboudjem/humanizer-skill — GitHub repository.](https://github.com/Aboudjem/humanizer-skill)
+
+[14] [Anbeeld/WRITING.md — GitHub repository.](https://github.com/Anbeeld/WRITING.md)
+
+[15] [devswha/patina — GitHub repository.](https://github.com/devswha/patina)
+
+[16] [JCarterJohnson/vibecoded-design-tells — unslop-text and r/ClaudeAI discussion.](https://github.com/JCarterJohnson/vibecoded-design-tells/tree/main/unslop-ai-text)
+
+[17] [Deupaxx/EveryDay-Writer — GitHub repository.](https://github.com/Deupaxx/EveryDay-Writer)
+
+[18] [Community-signal research and reproducible Chinese review in this repository.](research/community-signal-findings-2026-08.md)
 
 ## 许可证
 

@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-08-12T08:14:31.703859+00:00",
+  "generation_model": "gpt-5",
+  "records": [
+    {
+      "skill_id": "no-ai-slop",
+      "upstream": "https://github.com/petergyang/no-ai-slop",
+      "skill_file": "skills/no-ai-slop.SKILL.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 3226,
+      "completion_tokens": 3106,
+      "total_tokens": 6332,
+      "output_file": "outputs/no-ai-slop.md"
+    },
+    {
+      "skill_id": "humanizer-skill",
+      "upstream": "https://github.com/Aboudjem/humanizer-skill",
+      "skill_file": "skills/humanizer-skill.SKILL.md",
+      "finish_reason": "stop",
+      "prompt_tokens": 9248,
+      "completion_tokens": 2922,
+      "total_tokens": 12170,
+      "output_file": "outputs/humanizer-skill.md"
+    }
+  ]
+}

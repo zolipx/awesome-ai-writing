@@ -1,0 +1,34 @@
+{
+  "generation_model": "gpt-5",
+  "benchmark_type": "same original Chinese prose style-preservation test",
+  "run_status": "partially completed; recovered with a separate runner",
+  "primary_run": {
+    "script": "run_generation.py",
+    "completed_before_failure": [
+      {
+        "skill_id": "unslop",
+        "upstream": "https://github.com/theclaymethod/unslop",
+        "output_file": "outputs/unslop.md",
+        "status": "completed"
+      },
+      {
+        "skill_id": "writing-md",
+        "upstream": "https://github.com/Anbeeld/WRITING.md",
+        "output_file": "outputs/writing-md.md",
+        "status": "completed"
+      }
+    ],
+    "failed_candidate": {
+      "skill_id": "patina",
+      "upstream": "https://github.com/devswha/patina",
+      "status": "not_scored",
+      "reason": "The proxy returned HTTP 502 while processing the full fixed Patina SKILL.md context. No truncated or partial substitute was used."
+    },
+    "token_usage": "Unavailable because the first runner terminated on the unhandled HTTP 502 before it could persist its in-memory records."
+  },
+  "recovery_run": {
+    "script": "run_pending_generation.py",
+    "result_file": "pending_generation_results.json",
+    "completed": ["no-ai-slop", "humanizer-skill"]
+  }
+}
