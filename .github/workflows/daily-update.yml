@@ -1,0 +1,53 @@
+name: Daily repository update report
+
+on:
+  schedule:
+    # 04:00 Asia/Shanghai (20:00 UTC on the previous calendar day).
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run local tests
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Build evidence report
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/daily_update.py
+
+      - name: Commit report branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/latest.md
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh daily update report"
+          git fetch origin automation/daily-update:refs/remotes/origin/automation/daily-update || true
+          git push --force-with-lease origin HEAD:automation/daily-update
+
+      - name: Open or update review PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh pr list --head automation/daily-update --state open --json number --jq 'length' | grep -q '^0$'; then
+            gh pr create \
+              --head automation/daily-update \
+              --base main \
+              --title "chore: daily repository update report" \
+              --body "This PR contains the latest evidence report. Review links, licensing, maintenance signals, duplicates, and candidate quality before merging. README is intentionally not edited automatically."
+          fi
