@@ -113,6 +113,7 @@
 | [ai-to-human-zh](https://github.com/Holden323/ai-to-human-zh) | 面向简体中文文本的编辑工具包，提供检查与改写工作流。 | Python |
 | [Humanizer-zh](https://github.com/op7418/Humanizer-zh) | Humanizer 的中文版本。 | 未标注 |
 | [humanize-text](https://github.com/lynote-ai/humanize-text) | 提升 AI 草稿可读性和自然节奏的开源流程。 | Python |
+| [humanpen-skill](https://github.com/humanpen/humanpen-skill) | Agent Skill：在保留版式与引文的前提下改写 .docx/.pptx/.pdf，降低 AI 痕迹。 | Python |
 | [humanize](https://github.com/harshaneel/humanize) | 基于研究资料的 LLM 无关文本自然化 Skills。 | HTML |
 | [humanizer-ru](https://github.com/smixs/humanizer-ru) | 面向俄语文本的 AI 写作痕迹审计与自然化 Skill。 | Python |
 | [humanizer-de](https://github.com/marmbiz/humanizer-de) | 面向德语文本的 AI 写作模式审计与证据安全改写。 | Python |
